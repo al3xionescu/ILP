@@ -6,6 +6,8 @@ package uk.ac.ed.inf.powergrab;
  */
 public class App 
 {
+	public static double distance = 0.0003;
+	public static double power = 1.25;
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
