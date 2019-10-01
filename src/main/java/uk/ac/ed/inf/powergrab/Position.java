@@ -12,7 +12,6 @@ public class Position {
         double newLongitude = 0;
         if (direction == Direction.N) {
             newLatitude = App.distance * Math.sin((Math.toRadians(90)));
-            newLongitude = App.distance * Math.cos((Math.toRadians(90)));
         } else if (direction == Direction.NNE) {
             newLatitude = App.distance * Math.sin((Math.toRadians(67.5)));
             newLongitude = App.distance * Math.cos((Math.toRadians(67.5)));
@@ -23,7 +22,6 @@ public class Position {
             newLatitude = App.distance * Math.sin((Math.toRadians(22.5)));
             newLongitude = App.distance * Math.cos((Math.toRadians(22.5)));
         } else if (direction == Direction.E) {
-            newLatitude = App.distance * Math.sin((Math.toRadians(0)));
             newLongitude = App.distance * Math.cos((Math.toRadians(0)));
         } else if (direction == Direction.ESE) {
             newLatitude -= App.distance * Math.sin((Math.toRadians(22.5)));
@@ -36,7 +34,6 @@ public class Position {
             newLongitude = App.distance * Math.cos((Math.toRadians(67.5)));
         } else if (direction == Direction.S) {
             newLatitude -= App.distance * Math.sin((Math.toRadians(90)));
-            newLongitude = App.distance * Math.cos((Math.toRadians(90)));
         } else if (direction == Direction.SSW) {
             newLatitude -= App.distance * Math.sin((Math.toRadians(112.5)));
             newLongitude = App.distance * Math.cos((Math.toRadians(112.5)));
@@ -47,7 +44,6 @@ public class Position {
             newLatitude -= App.distance * Math.sin((Math.toRadians(157.5)));
             newLongitude = App.distance * Math.cos((Math.toRadians(157.5)));
         } else if (direction == Direction.W) {
-            newLatitude = App.distance * Math.sin((Math.toRadians(0)));
             newLongitude -= App.distance * Math.cos((Math.toRadians(0)));
         } else if (direction == Direction.WNW) {
             newLatitude = App.distance * Math.sin((Math.toRadians(22.5)));
